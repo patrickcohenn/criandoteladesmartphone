@@ -12,13 +12,15 @@
     <script src="https://kit.fontawesome.com/42c8de28f3.js" crossorigin="anonymous"></script>
     <title>Smartphone</title>
 </head>
-<body>
-    <div id="content">
+<body onload="time()">
+    <div id="content" >
         <div class="phone">
             <div class="screen">
                 <div class="top">
                     <div class="dock-left">
-                        <span class="clock"></span>
+                        <span class="clock">
+                            <div id="timeH"></div>
+                        </span>
                     </div>
                     <div class="dock">
                         <div class="sensor"></div>
@@ -39,7 +41,7 @@
                         </div>
                         <span>Mail</span>
                     </div>
-                    <div class="icon-app">
+                    <div class="icon-app" onclick="abrir('./calendario.html')">
                         <div class="icon">
                             <i class="fas fa-calendar-alt"></i>
                         </div>
@@ -72,13 +74,13 @@
                         </div>
                         <span>Weather</span>
                     </div>
-                    <div class="icon-app">
+                    <div class="icon-app" onclick="abrir('http://g1.com.br')">
                         <div class="icon">
                             <i class="fas fa-newspaper"></i>
                         </div>
                         <span>News</span>
                     </div>
-                    <div class="icon-app">
+                    <div class="icon-app" onclick="abrir('http://google.com.br')">
                         <div class="icon">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -86,6 +88,24 @@
                     </div>
                     <!--Fim da Segunda linha-->
 
+                    
+                    <div class="icon-app">
+                        <a href="#popup1" style="color: inherit; text-decoration: none;">
+                            <div class="icon">
+                                <i class="fas fa-envelope" href="#popup1"></i>
+                            </div>
+                            <span>Mail</span>
+                        </a>
+                    </div>
+                    <div id="popup1" class="overlay">
+                        <div class="popup">
+                            <h2>Email</h2>
+                            <a class="close" href="#">&times;</a>
+                            <div class="content">
+                            Thank to pop me out of that button, but now i'm done so you can close this window.
+                            </div>                        
+                        </div>
+                    </div>
                 </div>
                 <div id="dock-home">
                     <div class="buttons-home">
