@@ -68,13 +68,13 @@
                         </div>
                         <span>Maps</span>
                     </div>
-                    <div class="icon-app">
+                    <div class="icon-app" >
                         <div class="icon">
                             <i class="fas fa-cloud-sun"></i>
                         </div>
                         <span>Weather</span>
                     </div>
-                    <div class="icon-app" onclick="abrir('http://g1.com.br')">
+                    <div class="icon-app" onclick="abrir('http://xnerd.com.br')">
                         <div class="icon">
                             <i class="fas fa-newspaper"></i>
                         </div>
@@ -101,8 +101,12 @@
                         <div class="popup">
                             <h2>Email</h2>
                             <a class="close" href="#">&times;</a>
-                            <div class="content">
-                            Thank to pop me out of that button, but now i'm done so you can close this window.
+                            <div class="content" >
+                                <form method="get" action="envio_dados.php">
+                                    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+                                    <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+                                    <input type="submit" name="enviar" value="Enviar" onclick="msg()">    
+                                </form>
                             </div>                        
                         </div>
                     </div>
