@@ -5,6 +5,11 @@ h=today.getHours();
 h=("0" + h).slice(-2);
 m=today.getMinutes();
 m=("0" + m).slice(-2);
+day=today.getDate();
+year=today.getFullYear();
+month=today.getMonth();
+
+document.getElementById('date').innerHTML=day+"/"+month+"/"+year+" . "+h+":"+m;
 document.getElementById('timeH').innerHTML=h+":"+m;
 setTimeout('time()',500);
 }
